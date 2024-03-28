@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
+    
+    const func = () => {
+        alert("clicked on the button");
+    };
+    const parafunc = (para) => {
+        alert(para +"  button clicked on the button");
+    };
+
+
   return (
       <div className="App">
           <h1>REACT FIRST APP</h1>
@@ -11,8 +22,11 @@ function App() {
                   <code><table>
                       <tr>
                           <td>
-                             new react app
+                              
+                              <button onClick={func}> normal click </button>
+                              <button onClick={() => parafunc('parameter')}>parameterizeed button click </button>
                           </td>
+                          <td>new side</td>
                       </tr>
                   </table></code> 
         </p>
@@ -23,10 +37,22 @@ function App() {
           rel="noopener noreferrer"
         >
           Find google
-        </a>
+              </a>
+              <a
+                  className="App-link"
+                  href="Home.js"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              > Home </a>
       </header>
-    </div>
+      </div>
+     
   );
+    
 }
+
+
+
+
 
 export default App;
