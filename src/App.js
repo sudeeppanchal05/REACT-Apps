@@ -8,8 +8,8 @@ function App() {
     const func = () => {
         alert("clicked on the button");
     };
-    const parafunc = (para) => {
-        alert(para +"  button clicked on the button");
+    const parafunc = (para,name) => {
+        alert(para +"  button clicked on the button"+name);
     };
 
 
@@ -24,7 +24,7 @@ function App() {
                           <td>
                               
                               <button onClick={func}> normal click </button>
-                              <button onClick={() => parafunc('parameter')}>parameterizeed button click </button>
+                              <button onClick={() => parafunc('parameter','sudeep')}>parameterizeed button click </button>
                           </td>
                           <td>new side</td>
                       </tr>
