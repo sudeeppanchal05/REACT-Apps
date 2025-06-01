@@ -1,0 +1,14 @@
+/* filepath: /home/xuser/React app/REACT-Apps/REACT-Apps-26-03-2024/src/App.css */
+.my-button {
+  background-color: #20407a; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
